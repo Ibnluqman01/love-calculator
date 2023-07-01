@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Love-Calculator</title>
+</head>
+<body>
+    <div class="ref"><a href="index.html">Refresh</a></div>
+    <div class="container">
+        <div class="header">
+            <h1 class="boy">Male</h1>
+            <p>💘</p>
+            <h1 class="girl">Female</h1>
+        </div>
+        <h1 class="per">Love Percentage</h1>
+        <h2 id="pecen" class="cent" style="text-align: center;">0%</h2>
+        <form action="">
+            <div class="content">
+                <div class="male">
+                    <input type="text" id="man" required placeholder="Input Your Male Name">
+                </div>
+                <div class="love">&</div>
+                <div class="female">
+                    <input type="text" id="woman" required placeholder="Input Your Female Name">
+                </div>
+            </div>
+                <div class="btn">
+                <button onclick="cal()" type="submit">Check It Out</button>
+                </div>
+        </form>
+    </div>
+
+    <script>
+
+        
+        
+        
+        
+        
+        function cal(){
+            let count = Math.floor(Math.random() * 100) + 1;
+            let valM = document.getElementById("man").value;
+            let valF = document.getElementById("woman").value;
+
+            document.getElementsByClassName("boy")[0].innerHTML = valM;
+            document.getElementsByClassName("girl")[0].innerHTML = valF;
+            document.getElementById("pecen").innerHTML = count + " %";
+
+            if(count >= 70){
+                alert(valM + " and " + valF + " are destiny to be together🤣🤣🤣.");
+            }else{
+                alert(valM + " and " + valF + " are not destiny to be together😂😂😪");
+            }
+
+            // if(valM == undefined){
+            //     document.querySelector("#pecen").classList.remove("cent");
+            // }
+        }
+    </script>
+
+</body>
+</html>

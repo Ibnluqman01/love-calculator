@@ -1,0 +1,101 @@
+*{margin: 0px; padding: 0px; }
+body{
+    background-color: burlywood; height: 100vh;
+    align-items: center; display: flex; justify-content: center;
+}
+.container{
+
+    background-color: palevioletred;
+    padding-top: 30px; padding-bottom: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.header{
+    display: flex; justify-content: center; gap: 10px; color: white;
+}
+h1[class]{font-size: 50px;}
+p{font-size: 30px;}
+.content{
+    display: flex; height: auto; align-items: center;
+    width: 700px; justify-content: center; gap: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+}
+.male, .female{
+    height: 50px; background-color: white; width: 300px;
+    display: flex; border-radius: 5px; margin-top: 30px; margin-bottom: 30px;
+}
+input{
+    padding-left: 10px; border: none; font-size: 15px;
+    outline: none;
+    
+}
+.btn{
+    display: flex; justify-content: center;
+}
+button{
+    background-color: rgba(240, 248, 255, 0);
+    padding: 10px 50px; border-radius: 30px;
+    color: white; font-size: 20px; border: 1px outset white;
+}
+button:hover{
+    background-color: rgba(255, 0, 0, 0.641);
+    
+}
+.ref{
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    font-weight: 550;
+    padding: 5px;
+    cursor: pointer;
+}
+.per{text-align: center; color: red;}
+a{
+    color: white;
+    text-decoration: none;
+}
+@media(max-width: 750px){
+    .male{
+        height: 40px; margin-top: 10px;
+        width: 200px; margin-bottom: 0px;
+    }
+    .female{
+        height: 40px; margin-bottom: 20px;
+        width: 200px; margin-top: 0px;
+    }
+    .love{
+        padding: 0px; margin: 0px;
+    }
+
+    .container{
+        padding-top: 20px; padding-bottom: 20px;
+        
+    }
+
+    .content{
+        width: 300px; display: flex; flex-direction: column;
+    }
+    h1[class]{font-size: 30px;}
+    p{font-size: 20px;}
+    .per{font-size: 60px;}
+    input{font-size: 13px;}
+
+    button{
+        padding: 7px 25px; border-radius: 30px;
+        color: white; font-size: 13px; border: 1px outset white;
+    }
+
+    .ref{
+        position: fixed;
+        top: 10%;
+        right: 40%;
+        border-radius: 30px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+}
