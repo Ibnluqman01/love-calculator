@@ -32,33 +32,7 @@
         </form>
     </div>
 
-    <script>
-
-        
-        
-        
-        
-        
-        function cal(){
-            let count = Math.floor(Math.random() * 100) + 1;
-            let valM = document.getElementById("man").value;
-            let valF = document.getElementById("woman").value;
-
-            document.getElementsByClassName("boy")[0].innerHTML = valM;
-            document.getElementsByClassName("girl")[0].innerHTML = valF;
-            document.getElementById("pecen").innerHTML = count + " %";
-
-            if(count >= 70){
-                alert(valM + " and " + valF + " are destiny to be together🤣🤣🤣.");
-            }else{
-                alert(valM + " and " + valF + " are not destiny to be together😂😂😪");
-            }
-
-            // if(valM == undefined){
-            //     document.querySelector("#pecen").classList.remove("cent");
-            // }
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
