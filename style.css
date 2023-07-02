@@ -2,13 +2,14 @@
 body{
     background-color: burlywood; height: 100vh;
     align-items: center; display: flex; justify-content: center;
+    font-family: 'Tinos', serif;
 }
 .container{
 
     background-color: palevioletred;
     padding-top: 30px; padding-bottom: 30px;
     border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px; display: block;
 }
 .header{
     display: flex; justify-content: center; gap: 10px; color: white;
@@ -42,6 +43,9 @@ button:hover{
     background-color: rgba(255, 0, 0, 0.641);
     
 }
+.compatible, .not-compatible{
+    font-size: 20px; color: white; 
+}
 .ref{
     position: fixed;
     top: 10%;
@@ -53,7 +57,27 @@ button:hover{
     padding: 5px;
     cursor: pointer;
 }
+.display{
+    display: none; width: max-content; justify-content: center;
+    margin-left: auto; margin-right: auto; margin-bottom: 20px;
+    border: 3px solid rgb(168, 22, 22); 
+}
+span{
+    color: green; font-size: 20px; font-weight: 800;
+}
+.compatible{
+    padding: 10px 20px ; text-align: center;
+}
 .per{text-align: center; color: red;}
+.congrat1, .congrat2{
+    display: none;
+    background-color: pink;
+    padding: 8px 10px; color: white; font-size: 20px;
+    font-weight: 500; text-align: center; margin: 0px 15px;
+    border-radius: 20px; box-shadow: 2px 5px 10px black;
+
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -79,7 +103,7 @@ a{
     .content{
         width: 300px; display: flex; flex-direction: column;
     }
-    h1[class]{font-size: 30px;}
+    h1[class]{font-size: 20px;}
     p{font-size: 20px;}
     .per{font-size: 60px;}
     input{font-size: 13px;}
@@ -97,5 +121,11 @@ a{
         padding: 10px;
         font-size: 18px;
     }
+    
+
+    .congrat{
+        font-size: 18px;
+    }
+
 
 }
